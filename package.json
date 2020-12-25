@@ -1,0 +1,40 @@
+{
+  "name": "employees-leaves-management-server",
+  "version": "1.0.0",
+  "description": "Employees Leaves Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js ",
+    "dev": "node bin/dev",
+    "build": "rm -rf dist && mkdir dist && babel src -s -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrishrimalshah-raj/employees-leaves-management-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrishrimalshah-raj/employees-leaves-management-server/issues"
+  },
+  "homepage": "https://github.com/shrishrimalshah-raj/employees-leaves-management-server#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "moment": "2.29.1",
+    "mongoose": "5.11.8",
+    "morgan": "1.10.0"
+  }
+}
